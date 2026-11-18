@@ -11,5 +11,5 @@ def run_server():
 if __name__ == "__main__":
     threading.Thread(target=run_server, daemon=True).start()
     time.sleep(1)  # give Flask a moment to start
-    webview.create_window("Electricity Calculator", "http://127.0.0.1:5000")
+    webview.create_window("WattWise", "http://127.0.0.1:5000")
     webview.start()
