@@ -60,12 +60,20 @@ All calculations live in `calculator.py`.
 
 ## Getting Started
 
-### Prerequisites
+### Install on Windows (prebuilt app)
+
+Download and run [WattWise.exe from the latest GitHub Release](https://github.com/RandezR/Electricall-bill-tariff-calculator-app/releases/latest/download/WattWise.exe). Python and a separate installation are not required.
+
+Windows may show a SmartScreen warning because the executable is not code-signed. Only run it if you trust the download source.
+
+### Run from source
+
+#### Prerequisites
 
 - Python 3.8 or newer
 - `pip`
 
-### Installation
+#### Installation
 
 ```bash
 git clone https://github.com/RandezR/Electricall-bill-tariff-calculator-app.git
@@ -78,7 +86,7 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install flask
 ```
 
-### Run the web app
+#### Run the web app
 
 ```bash
 python app.py
@@ -88,7 +96,7 @@ Then open <http://127.0.0.1:5000> in your browser.
 
 To switch language, use the language selector in the UI or add `?lang=id` (Bahasa Indonesia) or `?lang=en` (English) to the URL.
 
-### Run as a desktop app (optional)
+#### Run as a desktop app (optional)
 
 ```bash
 pip install pywebview
@@ -106,7 +114,7 @@ python -m PyInstaller --noconfirm desktop.spec
 
 On Windows, the executable is created at `dist/WattWise.exe`.
 
-### Run the tests
+#### Run the tests
 
 ```bash
 pip install pytest
