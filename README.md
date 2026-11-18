@@ -51,6 +51,9 @@ All calculations live in `calculator.py`.
 ├── desktop.py        # Runs the Flask app inside a desktop window (pywebview)
 ├── desktop.spec      # PyInstaller spec for building the desktop executable
 ├── main.py           # Unit tests for the calculator functions
+├── assets/
+│   └── WattWise.ico  # Windows desktop executable icon
+├── LICENSE.txt       # MIT License
 ├── templates/        # HTML templates (index.html)
 └── .gitignore
 ```
@@ -98,8 +101,10 @@ To package it as an executable (optional):
 
 ```bash
 pip install pyinstaller
-pyinstaller desktop.spec
+python -m PyInstaller --noconfirm desktop.spec
 ```
+
+On Windows, the executable is created at `dist/WattWise.exe`.
 
 ### Run the tests
 
@@ -149,4 +154,4 @@ Contributions are welcome. Fork the repository, create a feature branch, and ope
 
 ## License
 
-No license has been specified yet. Add a `LICENSE` file (for example MIT) to define how others may use this project.
+This project is licensed under the [MIT License](LICENSE.txt). You may use, copy, modify, distribute, sublicense, and sell the software, provided the copyright and permission notice are included with copies or substantial portions of the software. The software is provided "as is", without warranty.
